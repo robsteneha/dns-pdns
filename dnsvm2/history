@@ -1,0 +1,255 @@
+azureuser@dnsvm2:~$ history
+    1  telnet 10.1.0.5
+    2  telnet 10.1.0.5 53
+    3  nano /etc/resolv.conf 
+    4  sudo nano /etc/resolv.conf 
+    5  nslookup ns.ppe.com 10.1.0.5
+    6  nslookup ns.ppe.com 10.1.0.5
+    7  nslookup vm2.ppe.com 12
+    8  nslookup ns.ppe.com 10.1.0.5
+    9  nslookup vm2.ppe.com 10.1.0.5
+   10  sudo apt update
+   11  sudo apt install pdns-recursor
+   12  pdns_recursor --config=default | grep config-dir
+   13  sudo nano /etc/powerdns/
+   14  ls /etc/powerdns/
+   15  sudo nano /etc/powerdns/recursor.
+   16  sudo nano /etc/powerdns/recursor.conf 
+   17  ps aux
+   18  sudo systemctl status pdns
+   19  sudo systemctl status powerdns
+   20  sudo systemctl status pdns-recursor
+   21  sudo nano /etc/powerdns/recursor.conf 
+   22  sudo systemctl restart pdns-recursor
+   23  systemctl restart pdns-recursor
+   24  sudo systemctl status pdns-recursor
+   25  nslookup vm2.ppe.com 10.1.0.5
+   26  dig +trace vm2.ppe.com
+   27  dig vm2.ppe.com
+   28  dig ns.ppe.com
+   29  dig 10.1.0.5
+   30  dig 10.1.0.6
+   31  sudo nano /etc/powerdns/recursor.conf 
+   32  sudo systemctl restart pdns-recursor
+   33  sudo systemctl status pdns-recursor
+   34  dig 10.1.0.5
+   35  dig 10.1.0.6
+   36  dig ppe.com
+   37  dig vm2.ppe.com
+   38  dig vm2.ppe.com -p53
+   39  sudo nano /etc/powerdns/recursor.conf 
+   40  sudo systemctl restart pdns-recursor
+   41  sudo systemctl status pdns-recursor
+   42  dig vm2.ppe.com -p53
+   43  dig vm2.ppe.com -p53 --trace
+   44  dig vm2.ppe.com -p53 +trace
+   45  sudo nano /etc/powerdns/recursor.conf 
+   46  sudo systemctl restart pdns-recursor
+   47  sudo systemctl status pdns-recursor
+   48  sudo su -
+   49  sudo systemctl status pdns-recursor
+   50  sudo nano /etc/powerdns/recursor.conf 
+   51  sudo nano /etc/powerdns/zone-file
+   52  sudo systemctl restart pdns-recursor
+   53  pwd
+   54  mv /etc/powerdns/zone-file zone-file
+   55  sudo mv /etc/powerdns/zone-file zone-file
+   56  sudo nano /etc/powerdns/recursor.conf 
+   57  sudo systemctl restart pdns-recursor
+   58  sudo nano /etc/powerdns/recursor.conf 
+   59  sudo systemctl restart pdns-recursor
+   60  journalctl -xe
+   61  ls -l
+   62  sudo nano /etc/powerdns/recursor.conf 
+   63  pwd
+   64  ps aux
+   65  sudo nano /etc/powerdns/recursor.conf 
+   66  sudo systemctl restart pdns-recursor
+   67  ps aux
+   68  ps aux | grep pdns
+   69  ps -u azureuser | grep pdns
+   70  ls -l /etc/pdns
+   71  ls -l /etc/powerdns
+   72  chown -R azureuser /etc/powerdns
+   73  sudo chown -R azureuser /etc/powerdns
+   74  sudo chown -R pdns /etc/powerdns
+   75  ls -l /etc/powerdns
+   76  sudo mkdir /etc/powerdns/files
+   77  sudo mv /home/azureuser/zone-file /etc/powerdns/files
+   78  sudo nano /etc/powerdns/recursor.conf 
+   79  sudo systemctl restart pdns-recursor
+   80  journalctl -xe
+   81  sudo nano /etc/powerdns/recursor.conf 
+   82  ls -l /etc/powerdns/files
+   83  chown pdns /etc/powerdns/files/zone-file 
+   84  sudo chown pdns /etc/powerdns/files/zone-file 
+   85  ls -l /etc/powerdns/files
+   86  sudo systemctl restart pdns-recursor
+   87  sudo systemctl status  pdns-recursor
+   88  netstat -ulpn 
+   89  netstat -nl
+   90  sudo nano /etc/powerdns/recursor.conf 
+   91  netstat -nl | grep listen
+   92  netstat -tulpn 
+   93  sudo su -
+   94  sudo nano /etc/powerdns/recursor.conf 
+   95  sudo systemctl restart pdns-recursor
+   96  sudo nano /etc/resolv.conf 
+   97  sudo netstat -tulpn 
+   98  sudo su -
+   99  dig vm2.ppe.com
+  100  sudo cat /etc/powerdns/files/zone-file 
+  101  sudo nano /etc/resolv.conf 
+  102  dig vm2.ppe.com
+  103  sudo su -
+  104  sudo nano /etc/resolv.conf 
+  105  sudo nano /etc/powerdns/recursor.conf 
+  106  sudo ls /var/log
+  107  journalctl -xe
+  108  sudo ls /var/log
+  109  sudo ls /var/log/journal
+  110  sudo ls /var/log/journal/41f788909b4244c69415db46f3e1d1d4/
+  111  sudo ls -l  /var/log/journal/41f788909b4244c69415db46f3e1d1d4/
+  112  sudo cat  /var/log/journal/41f788909b4244c69415db46f3e1d1d4OB 
+  113  sudo ls -l  /var/log/journal/41f788909b4244c69415db46f3e1d1d4/system
+  114  sudo nano /etc/powerdns/recursor.conf 
+  115  sudo nano /etc/systemd/systemd/pdns-recursor.service.d/use-syslog.conf
+  116  sudo ls /etc/systemd/systemd/pdns-recursor.service.d/
+  117  sudo mkdir /etc/systemd/systemd/pdns-recursor.service.d/
+  118  sudo ls /etc/systemd/systemd/
+  119  sudo ls /etc/systemd/
+  120  journalctl -u pdns-recursor -n 100
+  121  locate pdns-recursor.service
+  122  sudo systemctl status pdns-recursor.service 
+  123  sudo cat /lib/systemd/system/pdns-recursor.service
+  124  sudo nano /lib/systemd/system/pdns-recursor.service
+  125  sudo systemctl restart pdns-recursor.service 
+  126  sudo systemctl daemon-reload
+  127  sudo systemctl restart pdns-recursor.service 
+  128  journalctl -u pdns-recursor -n 100
+  129  sudo nano /lib/systemd/system/pdns-recursor.service
+  130  /pdns-recursor --help
+  131  sudo nano /lib/systemd/system/pdns-recursor.service
+  132  /usr/sbin/pdns_recursor --help
+  133  history
+  134  /usr/sbin/pdns_recursor --help
+  135  /usr/sbin/pdns_recursor --help | grep console
+  136  history
+  137  sudo systemctl restart pdns-recursor.service 
+  138  sudo nano /lib/systemd/system/pdns-recursor.service
+  139  sudo systemctl restart pdns-recursor.service 
+  140  systemctl daemon-reload
+  141  sudo systemctl daemon-reload
+  142  sudo systemctl restart pdns-recursor.service 
+  143  sudo systemctl status pdns-recursor.service 
+  144  sudo nano /lib/systemd/system/pdns-recursor.service
+  145  sudo systemctl status pdns-recursor.service 
+  146  cat 
+  147  cat /var/log/*
+  148  clear
+  149  cat /var/log/* | grep pdns
+  150  cat /var/log/* | grep pdns-recursor
+  151  grep pdns-recursor /var/log
+  152  grep pdns-recursor /var/log/
+  153  grep pdns-recursor /var/log/*
+  154  cat /var/log/syslog | tail
+  155  cat /var/log/syslog tail
+  156  cat /var/log/syslog tail -n 10
+  157  nslookup vm2.ppe.com 127.0.0.1
+  158  history
+  159  sudo nano /etc/powerdns/recursor.conf 
+  160  sudo systemctl restart pdns-recursor
+  161  sudo systemctl status pdns-recursor
+  162  nslookup vm2.ppe.com 127.0.0.1
+  163  nslookup vm2.ppe.com 10.1.0.5
+  164  nslookup vm2.ppe.com 10.1.0.6
+  165  nslookup vm2.ppe.com 127.0.0.1
+  166  nslookup 10.1.0.5
+  167  nslookup 127.0.0.1
+  168  dig vm2.ppe.com 
+  169  sudo su -
+  170  dig @127.0.0.1
+  171  dig a vm2.ppe.com @127.0.0.1
+  172  dig a ppe.com @127.0.0.1
+  173  dig a ns.ppe.com @127.0.0.1
+  174  dig a vm2.ppe.com @127.0.0.1
+  175  sudo -u pdns pdnsutil create-zone ppe.com ns1.ppe.com
+  176  sudo nano /etc/powerdns/recursor.conf 
+  177  sudo cat /etc/powerdns/files/zone-file 
+  178  sudo systemctl restart pdns-recursor
+  179  sudo systemctl status pdns-recursor
+  180  date
+  181  journalctl -u pdns-recursor | grep 11:20:09
+  182  journalctl -u pdns-recursor | grep 11:20
+  183  journalctl -u pdns-recursor | grep 11:20:
+  184  journalctl -u pdns-recursor | grep 11:19:
+  185  ls /var/log/
+  186  sudo nano /etc/powerdns/recursor.conf 
+  187  sudo systemctl restart pdns-recursor
+  188  sudo systemctl status pdns-recursor
+  189  journalctl -u pdns-recursor | grep 11:24:
+  190  nslookup vm.ppe.com 127.0.0.1
+  191  nslookup vm2.ppe.com 127.0.0.1
+  192  dig vm2.ppe.com
+  193  dig ppe.com
+  194  nc -vzu 10.42.0.45 53
+  195  sudo nano /etc/powerdns/recursor.conf 
+  196  sudo nano /etc/powerdns/files/zone-file 
+  197  sudo systemctl restart pdns-recursor
+  198  sudo systemctl status pdns-recursor
+  199  journalctl -u pdns-recursor | grep 11:30:
+  200  nslookup vm2.ppe.com 127.0.0.1
+  201  nslookup ppe.com 127.0.0.1
+  202  ls
+  203  cat /etc/powerdns/
+  204  ls /etc/powerdns/
+  205  cat /etc/powerdns/recursor.conf
+  206  cat /etc/powerdns/recursor.conf | grep '^[a-zA-Z]'
+  207  ls /etc/powerdns/
+  208  cat /etc/powerdns/recursor.
+  209  cat /etc/powerdns/recursor.d
+  210  ls /etc/powerdns/recursor.d
+  211  nslookup ppe.com 127.0.0.1
+  212  nslookup vm2.ppe.com 127.0.0.1
+  213  sudo nano /etc/powerdns/filterAAAA.lua
+  214  sudo nano /etc/powerdns/recursor.conf 
+  215  ls -l nano /etc/powerdns/filterAAAA.lua
+  216  chown pdns /etc/powerdns/filterAAAA.lua
+  217  sudo chown pdns /etc/powerdns/filterAAAA.lua
+  218  ls -l nano /etc/powerdns/filterAAAA.lua
+  219  sudo systemctl status pdns-recursor.service 
+  220  sudo systemctl restart pdns-recursor.service 
+  221  sudo systemctl status pdns-recursor.service 
+  222  nslookup vm2.ppe.com 127.0.0.1
+  223  cat /etc/powerdns/files/zone-file 
+  224  nslookup ppe.com 127.0.0.1
+  225  cat /etc/powerdns/recursor.conf | grep '^[a-zA-Z]'
+  226  nano /etc/powerdns/recursor.conf
+  227  sudo nano /etc/powerdns/recursor.conf
+  228  sudo systemctl restart pdns-recursor.service 
+  229  date
+  230  history
+  231  date
+  232  journalctl -u pdns-recursor | grep May 5 10:51
+  233  journalctl -u pdns-recursor | grep 10:51
+  234  netstat -tulpn
+  235  sudo su -
+  236  sudo systemctl restart pdns-recursor.service 
+  237  nslookup vm2.ppe.com 127.0.0.1
+  238  nslookup ppe.com 127.0.0.1
+  239  nslookup vm2.ppe.com 10.1.0.5
+  240  nslookup vm2.ppe.com 10.1.0.6
+  241  cat /etc/powerdns/files/zone-file 
+  242  sudo nano /etc/powerdns/recursor.conf | grep '^[a-zA-Z]'
+  243  cat /etc/powerdns/recursor.conf | grep '^[a-zA-Z]'
+  244  cat /usr/share/dns/root.hints
+  245  sudo nano /etc/powerdns/recursor.conf
+  246  cat /etc/powerdns/recursor.conf | grep '^[a-zA-Z]'
+  247  sudo systemctl restart pdns-recursor.service 
+  248  nslookup vm2.ppe.com 127.0.0.1
+  249  nslookup vm2.ppe.com 10.1.0.6
+  250  nslookup ppe.com 127.0.0.1
+  251  sudo nano /etc/powerdns/recursor.conf
+  252  sudo systemctl restart pdns-recursor.service 
+  253  nslookup vm2.ppe.com 127.0.0.1
+  254  history

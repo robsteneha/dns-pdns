@@ -1,0 +1,21 @@
+azureuser@dnsvm:~$ history
+    1  pwd
+    2  apt-get update
+    3  sudo su -
+    4  ls
+    5  sudo su -
+    6  svstat /service/tinydns
+    7  svstat /service/tinydns/
+    8  sudo su -
+    9  svstat /service/tinydns/
+   10  history
+   11  sudo su -
+   12  exit
+   13  ls
+   14  adduser arati
+   15  sudo su -
+   16  sudo su
+   17  sudo su -
+   18  dig vm2.ppe.com
+   19  ls
+   20  history

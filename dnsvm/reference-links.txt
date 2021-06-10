@@ -1,0 +1,49 @@
+These were all a waste a time we probably didn't refer any of these but still i mentioned it here just in case:
+
+https://dnsmadeeasyblog.medium.com/authoritative-vs-recursive-dns-servers-whats-the-difference-d0e5821c7617
+https://www.novell.com/documentation/dns_dhcp/?page=/documentation/dns_dhcp/dhcp_enu/data/behdbhhj.html
+https://totaluptime.com/kb/how-does-a-dns-query-work/
+https://netbeez.net/blog/linux-how-to-resolve-a-host-and-test-dns-servers/
+https://cr.yp.to/djbdns/run-server.html
+http://www.berkes.ca/guides/djbdns_dnscache.html
+https://cr.yp.to/djbdns/run-server.html
+https://freebsdrocks.net/tinydns.shtml
+https://www.howtoforge.com/perfect-djbdns-setup-on-ubuntu8.04-amd64
+http://manpages.ubuntu.com/manpages/xenial/man8/tinydns.8.html
+https://www.howtoforge.com/install-djbdns-nameserver-on-debian-etch
+https://askubuntu.com/questions/1066680/missing-dbndns-djbdns-in-ubuntu-18-04
+https://stackoverflow.com/questions/31499248/freebsd-script-to-add-user
+https://zoomadmin.com/HowToInstall/UbuntuPackage/djbdns
+https://www.howtoinstall.me/ubuntu/18-04/tinydyndns/
+http://smarden.org/tinydyndns/
+http://smarden.org/tinydyndns/install.html
+http://smarden.org/tinydyndns/configuration.html
+http://smarden.org/tinydyndns/tinydyndns-conf.8.html
+https://github.com/mbhangui/tinydnssec
+http://cr.yp.to/djbdns/run-cache.html
+
+tinydns:
+
+https://www.thatsgeeky.com/2010/12/setting-up-tinydns-on-amazons-linux/ (data file theory)
+https://eggplant.pro/blog/djbdns-debian-8-jessie/ (mam's link)
+https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=8fe7d772-e1a3-44a1-8cd9-11b8b1770a2b&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments
+(referred link)
+
+some other links:
+http://cr.yp.to/djbdns/tinydns-data.html
+http://www.fefe.de/djbdns/#splithorizon
+https://koeln.ccc.de/archiv/drt/dnscacheforthecluless.html
+https://www.tutorialspoint.com/how-to-install-and-configure-caching-only-dns-server-on-linux
+https://serverfault.com/questions/423739/djbdns-dnscache-configuration-svscan-wont-start
+http://www.fredshack.com/docs/djbdns.html
+http://linuxgoogle.blogspot.com/2013/04/what-is-usage-of-init-q.html
+https://www.ionos.com/digitalguide/server/configuration/flush-dns/
+https://social.technet.microsoft.com/Forums/en-US/dd8f3185-588d-4d43-9fe6-ca49ec0ac461/manually-add-entry-to-dns-cache-without-using-hosts-file?forum=w7itpronetworking
+https://serverfault.com/questions/7270/modify-dns-cache-other-than-hosts-file
+https://stackoverflow.com/questions/2796399/java-add-dns-cache-record
+https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu
+https://www.howtoforge.com/dns_cache_with_djbdns
+https://kadirsert.blogspot.com/2012/10/gcc-compile-error-on-linux-when.html
+http://books.gigatux.nl/mirror/linuxcookbook/0596006403/linuxckbk-CHP-24-SECT-11.html
+https://docs.microsoft.com/en-us/azure/dns/dns-getstarted-portal
+https://www.slideshare.net/yonitg/tinydns-and-dnscache (slides)

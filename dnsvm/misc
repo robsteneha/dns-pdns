@@ -1,0 +1,12 @@
+root@dnsvm:~# ls /var/dnscache/dnscache/root/servers/
+0.1.10.in-addr.arpa  @  ppe.com
+
+root@dnsvm:~# cat /var/dnscache/dnscache/root/servers/0.1.10.in-addr.arpa 
+127.0.0.1
+
+root@dnsvm:~# cat /var/dnscache/dnscache/root/servers/@
+8.8.8.8
+
+root@dnsvm:~# cat /var/dnscache/dnscache/root/servers/ppe.com 
+127.0.0.1
+

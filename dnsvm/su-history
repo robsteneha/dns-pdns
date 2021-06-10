@@ -1,0 +1,455 @@
+azureuser@dnsvm:~$ sudo su -
+sudo: unable to resolve host dnsvm
+root@dnsvm:~# history
+    1  apt-get update
+    2  apt-get install build-essential wget
+    3  apt-get install gcc make
+    4  ls -l /etc
+    5  apt-get install gcc
+    6  apt-get install gcc make
+    7  mkdir -p /package
+    8  chmod 1755 /package
+    9  cd /package
+   10  wget http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
+   11  wget http://cr.yp.to/ucspi-tcp/ucspi-tcp-0.88.tar.gz
+   12  wget http://cr.yp.to/djbdns/djbdns-1.05.tar.gz
+   13  tar -xzvf *
+   14  ls
+   15  gunzip *
+   16  ls
+   17  tar -xzvf *
+   18  ls
+   19  tar -xvf *
+   20  tar -xpf *
+   21  ls
+   22  tar -xpf daemontools-0.76.tar
+   23  rm -f daemontools-0.76.tar
+   24  cd admin/daemontools-0.76
+   25  echo gcc -O2 -include /usr/include/errno.h > compile/conf-cc
+   26  whereis conf-cc
+   27  ls
+   28  echo gcc -O2 -include /usr/include/errno.h > packge/compile/conf-cc
+   29  echo gcc -O2 -include /usr/include/errno.h > package/compile/conf-cc
+   30  echo gcc -O2 -include /usr/include/errno.h > package/compile/conf-cc package/install
+   31  ls package
+   32  ls package/compile
+   33  nano ./src/error.h
+   34  package/install
+   35  reboot
+   36  ls
+   37  cd /package
+   38  ls
+   39  tar -xf ucspi-tcp-0.88.tar
+   40  cd ucspi-tcp-0.88
+   41  nano ./error.h
+   42  make
+   43  make setup check
+   44  make
+   45  nano ./error.h
+   46  make
+   47  make setup check
+   48  tar -xf djbdns-1.05.tar
+   49  cd djbdns-1.05
+   50  echo gcc -O2 -include /usr/include/errno.h > conf-cc
+   51  make
+   52  make setup check
+   53  useradd -d /var/dnscache -s /bin/false dnscache
+   54  useradd -d /var/dnscache -s /bin/false dnslog
+   55  /usr/local/bin/dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   56  dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   57  cd -
+   58  ls
+   59  tar -xf djbdns-1.05.tar
+   60  ls
+   61  cd djbdns-1.05
+   62  echo gcc -O2 -include /usr/include/errno.h > conf-cc
+   63  make
+   64  make setup check
+   65  cd ..
+   66  ls
+   67  dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   68  /usr/local/bin/dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   69  reboot
+   70  dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   71  nano /lib/systemd/system/daemontools.service
+   72  chmod 644 /lib/systemd/system/daemontools.service
+   73  ln -s /lib/systemd/system/daemontools.service /etc/systemd/system/multi-user.target.wants/daemontools.service
+   74  service daemontools start
+   75  dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   76  /usr/local/bin/dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+   77  cd pac
+   78  ls
+   79  cd /package
+   80  ls
+   81  ls admin
+   82  /usr/local/bin/dnscache-conf dnscache dnslog /var/dnscache/dnscache 127.0.0.1
+   83  ln -sf /var/dnscache/dnscache /service/
+   84  /user/local/bin/svstat /service/tinydns
+   85  /user/local/bin/svstat /service/dnscache
+   86  useradd --no-create-home --shell /bin/false Gtinydns
+   87  useradd --no-create-home --shell /bin/false Gdnslog
+   88  tinydns-conf Gtinydns Gdnslog /etc/tinydns 127.0.0.1
+   89  ln -s /etc/tinydns /service/tinydns
+   90  svstat /service/tinydns
+   91  svstat /service/dnscache
+   92  /user/local/bin/svstat /service/dnscache
+   93  history
+   94  mkdir /var/dnscache
+   95  /usr/sbin/useradd -d /var/dnscache -s /bin/false -c dnscache dnscache
+   96  userdel dnscache
+   97  userdel dnslog
+   98  /usr/sbin/useradd -d /var/dnscache -s /bin/false -c dnscache dnscache
+   99  /usr/sbin/useradd -d /var/dnscache -s /bin/false -c dnslog  dnslog
+  100  /usr/local/bin/dnscache-conf dnscache dnslog /var/dnscache/dnscache 40.80.94.93
+  101  touch /var/dnscache/dnscache/root/ip/40.80.94
+  102  ln -sf /var/dnscache/dnscache /service/
+  103  svstat /service/dnscache
+  104  man init
+  105  nslookup google.com
+  106  nslookup Default Server
+  107  nslookup Default Server: 40.80.94.93
+  108  nslookup Default Server: [40.80.94.93]
+  109  nslookup Default Server:  ns1.x Address:  10.17.3.8 > server 10.20.30.12 Default Server:  [10.20.30.12] Address:10.20.30.12 > www.securityfocus.com Server:  [10.20.30.12] Address:  10.20.30.12 Non-authoritative answer: Name:    www.securityfocus.com Addresses:  207.126.127.69, 207.126.127.66 > exit
+  110  nslookup google.com 40.80.94.93
+  111  ls /var/dnscache/dnscache/env/
+  112  ls /var/dnscache/dnscache/env/root
+  113  ls /var/dnscache/dnscache/env/ROOT
+  114  ls /var/dnscache/dnscache/root/servers
+  115  ls /var/dnscache/dnscache/root/servers/@
+  116  nano /var/dnscache/dnscache/root/servers/@
+  117  ll /var/dnscache/dnscache/root/servers
+  118  ls -l /var/dnscache/dnscache/root/servers
+  119  ps -aux
+  120  ps -aux | grep dnscache
+  121  sudo start svscan
+  122  svstat /service/dnscache
+  123  ps -aux | grep dnscache
+  124  svstat /service/dnscache
+  125  nano /etc/resolv.conf
+  126  nslookup google.com 40.80.94.93
+  127  tail -F /etc/dnscache/log/main/current | tai64nlocal
+  128  svc -u /etc/service/dnscache
+  129  svc -u /service/dnscache
+  130  svstat /service/dnscache
+  131  cd /packet
+  132  cd /package
+  133  ls
+  134  history
+  135  svstat /service/dnscache
+  136  svstat /service/*
+  137  nano /var/dnscache/tinydns/root
+  138  ls /var/dnscache/tinydns/root
+  139  ls /var/dnscache/tinydns/
+  140  ls /var/dnscache/
+  141  ls /var/dnscache/dnscache
+  142  ls /var/dnscache/dnscache/root
+  143  tree /var/dnscache/dnscache/root
+  144  apt install tree
+  145  tree /var/dnscache/dnscache/root
+  146  nano /var/dnscache/dnscache/root/data
+  147  cd /var/dnscache/dnscache/root/
+  148  make
+  149  make data
+  150  cd -
+  151  make
+  152  l
+  153  history | grep tinylog
+  154  histor
+  155  history
+  156  /usr/sbin/useradd -d /var/dnscache -s /bin/false -c tinydns tinydns
+  157  /usr/sbin/useradd -d /var/dnscache -s /bin/false -c tinylog tinylog
+  158  /usr/local/bin/tinydns-conf tinydns tinylog /var/dnscache/tinydns 127.0.0.1
+  159  cd /var/dnscache/dnscache/root/
+  160  ls
+  161  rm data
+  162  ls
+  163  cd -
+  164  cd /var/dnscache/tinydns/root
+  165  ls
+  166  cat data
+  167  ./add-ns internal 40.80.94.93
+  168  ./add-ns ppe.dns 40.80.94.93
+  169  make
+  170  cat data
+  171  ln -sf /var/dnscache/tinydns /service
+  172  svstat /service/*
+  173  cat > /var/dnscache/dnscache/root/servers/internal
+  174  cat /var/dnscache/dnscache/root/servers/internal
+  175  ls /var/dnscache/dnscache/root/servers/
+  176  cp /var/dnscache/dnscache/root/servers/internal /var/dnscache/dnscache/root/servers/ppe.dns
+  177  ls /var/dnscache/dnscache/root/servers/
+  178  svc -h /service/dnscache
+  179  svc -h /service/dnscache/
+  180  nslookup ppe.dns
+  181  nslookup 40.80.94.93
+  182  ls
+  183  nano data
+  184  make
+  185  cat data
+  186  cp /var/dnscache/dnscache/root/servers/internal /var/dnscache/dnscache/root/servers/94.80.40.in-addr.arpa
+  187  ls /var/dnscache/dnscache/root/servers/
+  188  rm /var/dnscache/dnscache/root/servers/ppe.dns
+  189  ls /var/dnscache/dnscache/root/servers/
+  190  svc -h /service/dnscache
+  191  nslookup 40.80.94.93
+  192  nslookup 127.0.0.1
+  193  nslookup 40.80.94
+  194  nslookup 40.80.94.
+  195  nslookup 40.80.94.1
+  196  nslookup Default Server
+  197  nano /etc/resolve.conf
+  198  nano /etc/resolv.conf
+  199  nslookup 40.80.94.
+  200  ./add-host ppe.com.internal 40.80.94.93
+  201  make
+  202  cat data
+  203  nano data
+  204  make
+  205  cat data
+  206  nano data
+  207  make
+  208  cat data
+  209  ls servers
+  210  ls /var/dnscache/dnscache/root/servers
+  211  rm /var/dnscache/dnscache/root/servers/94.80.40.in-addr.arpa 
+  212  rm /var/dnscache/dnscache/root/servers/internal
+  213  cat > /var/dnscache/dnscache/root/servers/ppe.com
+  214  cp /var/dnscache/dnscache/root/servers/ppe.com /var/dnscache/dnscache/root/servers/0.1.10.in-addr.arpa
+  215  ls /var/dnscache/dnscache/root/servers
+  216  svc -h /service/dnscache/
+  217  svstat /service/*
+  218  svc -h /service/tinydns/
+  219  svstat /service/*
+  220  svc -d /service/dnscache/
+  221  ls /service/
+  222  ls /service/dnscache
+  223  ls /service/dnscache/log
+  224  ls /service/dnscache/log/main
+  225  ls /service/dnscache/log/main/curent
+  226  ls /service/dnscache/log/main/current
+  227  cat /service/dnscache/log/main/current
+  228  ps aux 
+  229  netstat -ulpn | grep 53
+  230  kill 854
+  231  netstat -ulpn | grep 53
+  232  kill 2482
+  233  netstat -ulpn | grep 53
+  234  sudo systemctl stop systemd-resolve
+  235  sudo systemctl disable systemd-resolve
+  236  sudo systemctl disable systemd-resolved
+  237  sudo systemctl stop systemd-resolved
+  238  netstat -ulpn | grep 53
+  239  ls
+  240  ls /package
+  241  ls /package/server
+  242  ls /var/dnscache/dnscache/
+  243  ls /var/dnscache/dnscache/env
+  244  nano /var/dnscache/dnscache/env/IP
+  245  svc -u /service/dnscache/
+  246  svstat /service/*
+  247  netstat -ulpn | grep 53
+  248  ps aux
+  249  netstat -ulpn | grep 53
+  250  svc -d /service/tinydns/
+  251  netstat -ulpn | grep 53
+  252  kill 1678
+  253  svc -u /service/tinydns/
+  254  netstat -ulpn | grep 53
+  255  nslookup ppe.com
+  256  nslookup ns.ppe.com
+  257  svstat /service/*
+  258  nslookup ns.ppe.com
+  259  cat data
+  260  nslookup ns.ppe.com 10.1.0.5
+  261  nslookup ns.ppe.com 127.0.0.1
+  262  nano /etc/resolv.conf
+  263  nslookup ns.ppe.com 10.1.0.5
+  264  ls /service/dnscache/log/main/current
+  265  cat /service/dnscache/log/main/current
+  266  ls /service/dnscache/log/main/
+  267  cat /service/dnscache/log/main/state
+  268  ls /service/dnscache/log/main/state
+  269  history
+  270  svstat /service/
+  271  svstat /service/*
+  272  nslookup ns.ppe.com 10.1.0.5
+  273  nslookup ns.ppe.com 127.0.0.1
+  274  ls /var/dnscache/dnscache/root/servers
+  275  nano /var/dnscache/dnscache/root/servers/@
+  276  nano /var/dnscache/dnscache/root/servers/0.1.10.in-addr.arpa 
+  277  cat /var/dnscache/dnscache/root/servers/ppe.com
+  278  nano /var/dnscache/dnscache/root/servers/@
+  279  svc -d /service/dnscache/
+  280  svc -u /service/dnscache/
+  281  svstat /service/*
+  282  nslookup ns.ppe.com 127.0.0.1
+  283  nslookup ns.ppe.com 10.1.0.5
+  284  nano /var/dnscache/dnscache/root/servers/ppe.com
+  285  nano /var/dnscache/dnscache/root/servers/0.1.10.in-addr.arpa 
+  286  svc -d /service/dnscache/
+  287  svc -u /service/dnscache/
+  288  svstat /service/*
+  289  nslookup ns.ppe.com 10.1.0.5
+  290  ls /var/dnscache/dnscache/
+  291  ls /var/dnscache/dnscache/log
+  292  ls /var/dnscache/dnscache/log/main
+  293  ls /var/dnscache/dnscache/log/run
+  294  ls /var/dnscache/dnscache/log/main/current 
+  295  cat /var/dnscache/dnscache/log/main/current 
+  296  cat /var/dnscache/dnscache/log/main/current | tai64nlocal
+  297  netstat -ulpn
+  298  netstat -tulpn
+  299  telnet 10.1.0.5
+  300  telnet 10.1.0.5 53
+  301  nslookup ns.ppe.com 10.1.0.5
+  302  nslookup ppe.com 10.1.0.5
+  303  nslookup ns.ppe.com 10.1.0.5
+  304  nano /etc/resolv.conf 
+  305  nslookup ns.ppe.com
+  306  dig ns.ppe.com
+  307  dig ns.ppe.com +trace
+  308  cd /etc/env
+  309  ls /etc/env
+  310  cd /var/dnscache/dnscache/env
+  311  ls
+  312  cat ip
+  313  cat IP
+  314  cat *
+  315  echo 1 > FORWARDONLY
+  316  ls
+  317  cat *
+  318  nslookup ns.ppe.com 10.1.0.5
+  319  cd -
+  320  ls
+  321  cd -
+  322  cd ..
+  323  ;s
+  324  ls
+  325  cd root
+  326  ls
+  327  cd ip
+  328  ls
+  329  nano 127.0.0.1 
+  330  touch 10
+  331  rm 40.80.94 
+  332  ls
+  333  history | grep svc
+  334  svc -d /service/dnscache/
+  335  svc -u /service/dnscache/
+  336  svstat /service/*
+  337  cd ..
+  338  ls
+  339  cd log/main/current
+  340  cat log/main/current
+  341  nslookup ns.ppe.com 10.1.0.5
+  342  netstat -tulpn
+  343  nano /etc/resolv.conf 
+  344  tcpdump -i any udp port 53 -vv
+  345  nslookup ns.ppe.com 127.0.0.1
+  346  ls
+  347  tree
+  348  cd ..
+  349  ls
+  350  cd tinydns/root
+  351  ls
+  352  nano data
+  353  svc -d /service/dnscache/
+  354  svc -d /service/tinydns/
+  355  svc -u /service/tinydns/
+  356  svc -u /service/dnscache/
+  357  make
+  358  cat data
+  359  svc -d /service/dnscache/
+  360  svc -d /service/tinydns/
+  361  svc -u /service/tinydns/
+  362  svc -u /service/dnscache/
+  363  svstat /service/*
+  364  nslookup ns.ppe.com 10.1.0.5
+  365  nslookup ns.ppe.com 127.0.0.1
+  366  nslookup vm2.ppe.com 127.0.0.1
+  367  adduser arati
+  368  su - arati
+  369  usermod -aG sudo arati
+  370  groups arati
+  371  su - arati
+  372  vi /var/dnscache/tinydns/root/data
+  373  svstat /var/dnscache/*
+  374  cd  /var/dnscache/tinydns/root/
+  375  make
+  376  ls -la
+  377  svc -t /var/dnscache/tinydns/
+  378  svc -t /var/dnscache/dnscache/
+  379  svstat /var/dnscache/*
+  380  nslookup vm2.ppe.com 127.0.0.1
+  381  nslookup dnsvm.ppe.com 127.0.0.1
+  382  nslookup dnsvm.ppe.com 
+  383  cat /etc/resolv.conf 
+  384  netstat -ntulp
+  385  cd /var/dnscache/dnscache/
+  386  ls -la
+  387  cd env/
+  388  ls -la
+  389  cat *
+  390  ls /var/dnscache/dnscache/root
+  391  ls -la $_
+  392  chmod +x *
+  393  ls -la
+  394  cd ../root/
+  395  ls -la
+  396  cd ip/
+  397  ls -la
+  398  chmod 755 *
+  399  ls -la
+  400  cd ../servers/
+  401  ls -la
+  402  cat *
+  403  vi @
+  404  echo 127.0.0.1>0.1.10.in-addr.arpa
+  405  echo 127.0.0.1>ppe.com
+  406  cat *
+  407  chmod +x *
+  408  svc -t /var/dnscache/dnscache/
+  409  svstat /var/dnscache/*
+  410  nslookup dnsvm.ppe.com 127.0.0.1
+  411  nslookup dnsvm.ppe.com 
+  412  vi /var/dnscache/tinydns/root/data
+  413  svc -t /var/dnscache/tinydns/
+  414  svc -t /var/dnscache/dnscache/
+  415  nslookup dnsvm.ppe.com 
+  416  nslookup vm2.ppe.com 
+  417  nslookup vm2.ppe.com 10.1.0.5
+  418  chmod -x *
+  419  svc -t /var/dnscache/dnscache/
+  420  nslookup vm2.ppe.com 10.1.0.5
+  421  cd ../ip/
+  422  chmod -x *
+  423  svc -t /var/dnscache/dnscache/
+  424  nslookup vm2.ppe.com 10.1.0.5
+  425  cd ../../env/
+  426  chmod -x *
+  427  svc -t /var/dnscache/dnscache/
+  428  nslookup vm2.ppe.com 10.1.0.5
+  429  ls -la
+  430  nslookup vm2.ppe.com 10.1.0.5
+  431  nslookup ns.ppe.com 10.1.0.5
+  432  nslookup vm2.ppe.com 10.1.0.5
+  433  nslookup vm2.ppe.com 10.1.0.6
+  434  nslookup ns.ppe.com 10.1.0.5
+  435  nslookup vm2.ppe.com 10.1.0.6
+  436  nslookup vm2.ppe.com 10.1.0.5
+  437  history | grep dig
+  438  dig +trace vm2.ppe.com
+  439  dig +trace 10.1.0.5
+  440  dig vm2.ppe.com
+  441  dig vm2.ppe.com +trace
+  442  history
+  443  cat /var/dnscache/tinydns/root/data
+  444  nano /var/dnscache/tinydns/root/data
+  445  make
+  446  make -C /var/dnscache/tinydns/root/
+  447  MAN MAKE
+  448  man make
+  449  svc -t /service/tinydns
+  450  svc -t /service/dnscache
+  451  svstat /service/*
+  452  history

@@ -1,0 +1,4 @@
+root@dnsvm:~# cat /var/dnscache/tinydns/root/data
+.ppe.com:127.0.0.1:a:259200
+=dnsvm.ppe.com:10.1.0.5:86400
+=dnsvm2.ppe.com:10.1.0.6:86400

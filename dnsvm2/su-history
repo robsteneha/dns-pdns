@@ -1,0 +1,19 @@
+root@dnsvm2:~# history
+    1  systemctl restart pdns-recursor
+    2  systemctl status pdns-recursor
+    3  netstat -tulpn
+    4  exit
+    5  netstat -tulpn
+    6  exit
+    7  ls /etc/logs
+    8  ls /etc/
+    9  exit
+   10  netstat -tulpn
+   11  exit
+   12  netstat -tulpn
+   13  sudo systemctl stop systemd-resolve
+   14  sudo systemctl stop systemd-resolved
+   15  netstat -tulpn
+   16  exit
+   17  ls
+   18  history
